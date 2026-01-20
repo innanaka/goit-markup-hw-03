@@ -31,8 +31,12 @@ img {
   padding-bottom: 120px;
 }
 .container {
+  width: 100%;
   max-width: 1158px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -68,12 +72,14 @@ h1 {
   max-width: 496px;
   margin: auto;
   padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .logo {
@@ -103,15 +109,21 @@ h1 {
 a {
   text-decoration: none;
 }
-
+.nav-main .address-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .nav-link {
+  display: inline-block;
+  text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   padding-right: 40px;
 }
 
@@ -170,7 +182,7 @@ a {
   text-align: center;
   white-space: nowrap;
   display: block;
-  margin: 64px auto;
+  margin: 48px auto;
 }
 
 .hero-button:hover,
@@ -181,7 +193,17 @@ a {
 .features .container {
   height: 344px;
 }
-
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.features-item {
+    width: calc((100% - 3 * 24px) / 4);
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -208,15 +230,23 @@ a {
 }
 .team .container {
   height: 732px;
+  width: 1440px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 32px;
+  border: 1px solid #000;
+  padding: 120px 0;
 }
 .team-title {
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-top: 120px;
+  margin-bottom: 72px;
+  text-align: center;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 .team {
   background: #f4f4fd;
@@ -229,10 +259,16 @@ a {
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
   border-radius: 0 0 4px 4px;
-  width: 264px;
-  height: 380px;
+  height: auto;
   margin-right: 24px;
   margin-bottom: 120px;
+}
+.card-wrapper {
+  padding: 32px 16px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  
 }
 .border-team {
   border: 1px solid #000;
@@ -275,8 +311,9 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 8px;
+ grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
+
 .grid-list li {
   flex: 0 0 calc(33.33% - (8px * 2 / 3));
   display: flex;
@@ -316,10 +353,9 @@ a {
 
 .footer {
   background: #2e2f42;
+  padding: 100px 0;
 }
-.footer .container {
-  height: 312px;
-}
+
 .footer-logo {
   display: block;
   margin-top: 140px;
