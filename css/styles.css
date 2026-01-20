@@ -304,13 +304,12 @@ a {
   background: #2e2f42;
 }
 .footer .container {
-  width: 1440px;
   height: 312px;
   
 }
 .footer-logo {
   display: block;
-  margin-top: 100px;  
+  margin-top: 140px;  
 }
 
 .footer-text {
@@ -322,8 +321,6 @@ a {
   width: 264px;
     height: 112px;
     padding-top: 16px;
-
-
 }
 
 .footer-logo-part-one {
