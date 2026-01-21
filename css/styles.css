@@ -22,7 +22,7 @@ ul {
 }
 img {
     display: block;
-      object-fit: cover;
+    object-fit: cover;
 }
 .features, .team, .portfolio {
   padding-top: 120px;
@@ -266,9 +266,6 @@ a {
   flex-direction: column;
 }
 .border-team {
-  border: 1px solid #000;
-  list-style: none;
-  border-top: none;
   padding: 32px 16px;
 }
 
