@@ -26,10 +26,17 @@ img {
       height: auto;
       object-fit: cover;
 }
-.section {
+.features, .team, .portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.features .container,
+.team .container,
+.portfolio .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .container {
   width: 100%;
   max-width: 1158px;
@@ -204,7 +211,6 @@ a {
 }
 .features .container {
   min-height: 344px;
-  padding: 120px 0;
 }
 .features-list {
   display: flex;
@@ -243,15 +249,11 @@ a {
 }
 .team .container {
   min-height: 732px;
-  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 32px;
-  border: 1px solid #000;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .team-title {
 
