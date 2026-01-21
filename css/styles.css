@@ -87,6 +87,7 @@ header {
 
 .logo {
   margin: 24px;
+  margin-right: 76px;
 }
 
 .logo-part-one {
@@ -115,7 +116,7 @@ a {
 .nav-main .address-nav {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 32px;
 }
 .nav-link {
   display: inline-block;
@@ -163,7 +164,7 @@ a {
 }
 .main-hero {
   background-color: #2e2f42;
-  height: 600px;
+  min-height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -202,7 +203,7 @@ a {
   cursor: pointer;
 }
 .features .container {
-  height: 344px;
+  min-height: 344px;
   padding: 120px 0;
 }
 .features-list {
@@ -241,7 +242,7 @@ a {
   padding-right: 24px;
 }
 .team .container {
-  height: 732px;
+  min-height: 732px;
   max-width: 1440px;
   display: flex;
   align-items: center;
@@ -308,15 +309,12 @@ a {
 }
 
 .portfolio .container {
-  height: 1240px;
+  min-height: 1240px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   align-content: center;
-  column-gap: 24px;
-  row-gap: 48px;
-  
 }
 .grid-list {
   display: flex;
@@ -324,10 +322,12 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .grid-list li {
-  flex: 0 0 calc(33.33% - (8px * 2 / 3));
+  flex: 0 0 calc(33.33% - (24px * 2 / 3));
   display: flex;
   flex-direction: column;
   align-items: flex-start;
