@@ -90,11 +90,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 40px;
 }
 
 .logo {
   margin: 24px;
-  margin-right: 76px;
 }
 
 .logo-part-one {
@@ -255,11 +255,9 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 32px;
+  gap: 72px;
 }
 .team-title {
-
-  padding-bottom: 72px;
   text-align: center;
 }
 .team-list {
@@ -331,7 +329,7 @@ a {
 }
 
 .grid-list li {
-  flex: 0 0 calc(33.33% - (24px * 2 / 3));
+  flex: 0 0 360px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
